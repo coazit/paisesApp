@@ -30,10 +30,11 @@ export class PorPaisComponent{
         this.paises = [];
       }
     )
-    
-    
+  }
 
-
+  sugerencias(termino: string) {
+    this.hayError = false;
+    //TODO: Crear sugernecvia
   }
 
 }
