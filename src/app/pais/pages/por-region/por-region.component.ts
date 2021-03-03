@@ -24,6 +24,10 @@ export class PorRegionComponent {
     //TODO: hacer llamada al servicio
   }
 
+  getClaseCSS(region: string): string {
+    return (region === this.regionActiva) ? 'btn btn-primary': 'btn btn-outline-primary';
+  }
+
  
 
 }
