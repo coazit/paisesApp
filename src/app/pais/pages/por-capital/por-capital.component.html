@@ -1,15 +1,20 @@
-<h2>Por Capital</h2>
-<hr>
+<div class="animate__animated animate__bounce animate__faster">
+    <h2>Por Capital</h2>
+    <hr>
 
-<div class="row">
-    <div class="col">
-        <app-pais-input
-        (onEnter) = "buscar($event)"
-        (onDebounce)= "sugerencias($event)"
-        placeholder="Por Capital...">
-        </app-pais-input>
+    <div class="row">
+        <div class="col">
+            <app-pais-input
+            (onEnter) = "buscar($event)"
+            (onDebounce)= "sugerencias($event)"
+            placeholder="Por Capital...">
+            </app-pais-input>
+        </div>
     </div>
+
 </div>
+
+
 
 <hr>
 <div *ngIf="hayError" class="alert alert-danger">
